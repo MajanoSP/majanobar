@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Trabajo - Resto Bar</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+        .horario {
+            display: inline-block;
+            background: rgba(255, 102, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(255, 102, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .horario:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            color: #ff6600;
+            text-shadow: 2px 2px 4px rgba(255, 102, 0, 0.5);
+        }
+        .dias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .dia {
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            box-shadow: 0px 2px 5px rgba(255, 102, 0, 0.5);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #cc5200;
+        }
+        .menu-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .menu-button:hover {
+            background: #444;
+        }
+        @media (max-width: 600px) {
+            .horario {
+                width: 90%;
+                padding: 15px;
+            }
+            .dias {
+                flex-direction: column;
+                align-items: center;
+            }
+            .dia {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Majano Bar</h1>
+    <div class="horario">
+        <p><strong>HORARIOS:</strong></p>
+        <div class="dias">
+            <div class="dia">Miércoles</div>
+            <div class="dia">Jueves</div>
+            <div class="dia">Viernes</div>
+            <div class="dia">Sábado</div>
+            <div class="dia">Domingo</div>
+            <div class="dia">Lunes</div>
+        </div>
+        <p><strong>Horario:</strong> 19:45 - 01:30</p>
+        <button class="button" onclick="alert('¡Te esperamos en nuestro resto bar!')">Más Información</button>
+    </div>
+    <br>
+    <a href="index.html" class="menu-button">Volver al Menú Principal</a>
+</body>
+</html>

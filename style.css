@@ -1,0 +1,283 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Coiny",
+   
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F28500;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+ .h22{
+  font-family: "Dancing Script", serif;
+  font-size: 30px !important;
+ }
+  header .logo img {
+    width: 120px; 
+    height: auto;
+    border-radius: 12px;
+    border: .5px solid black;
+  }
+  
+  
+  header nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+  }
+  
+  header nav a {
+    color: black; 
+    font-weight: bold;
+    background-color: #f2a200; 
+    border-radius: 12px; 
+    padding: 0.1rem 0.2rem; 
+    text-decoration: none; 
+    text-align: center;
+    margin: 0 1rem; 
+    border: 2px solid black; 
+    
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  #reservation-form label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+  }
+  
+  #reservation-form input {
+    display: block; 
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 15px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+
+  /* Main */
+
+  
+  .hero {
+    background: url('frente.jpeg') no-repeat center center/cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 70px; 
+  }
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    
+  }
+  
+
+  
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section: Menu Cards */
+.menu-cards {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffe5b4;
+    position: relative; 
+  }
+  
+  .menu-cards h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+    z-index: 10; 
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 2rem; 
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; 
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+  }
+  
+  .card:nth-child(1) {
+    background-image: url('burger.jpeg');
+  }
+  
+  .card:nth-child(2) {
+    background-image: url('majano.jpeg');
+  }
+  
+  .card:nth-child(3) {
+    background-image: url('calabresa.jpeg');
+  }
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  footer form input, footer form textarea, footer form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  footer form button {
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer form button:hover {
+    background-color: #e68a00;
+  }
+  
+  footer iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* Adjust Header */
+    header {
+         position: fixed;
+        padding: 1rem; 
+      }
+    
+      header .logo img {
+        width: 70px; 
+        margin-right: 30px;
+      }
+     
+    
+      header nav {
+        justify-content: flex-end; 
+        width: 100%; 
+      }
+    
+      header nav a {
+        margin: 0 0.5rem; 
+      }
+  
+    
+    .hero {
+      height: 600px; 
+      margin-top: 60px; 
+    }
+  
+    .hero-text {
+      padding: 1rem;
+    }
+  
+    /* Adjust Menu Cards */
+  .cards-container {
+    flex-direction: column; 
+    gap: 2rem; 
+    align-items: center; 
+    margin-top: 2rem; 
+    
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      overflow-x: hidden;
+    
+  }
+
+  .card {
+    width: 100%; 
+    height: 250px; 
+  }
+
+  .menu-cards h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem; 
+  }
+}
+  
+    /* Adjust Footer */
+    footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    footer .footer-section {
+      width: 100%; 
+      margin: 1rem 0;
+    }
+  
